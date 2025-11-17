@@ -1,0 +1,10 @@
+﻿global using Business_Layer.IServices;
+global using Data_Access_Layer;
+global using Business_Layer;
+global using Application.DependencyInjections;
+global using Microsoft.EntityFrameworkCore;
+global using Business_Layer.Services;
+global using AutoMapper;
+global using Business_Layer.DTO.Requests;
+global using Business_Layer.DTO.Responses;
+global using Microsoft.AspNetCore.Mvc;
