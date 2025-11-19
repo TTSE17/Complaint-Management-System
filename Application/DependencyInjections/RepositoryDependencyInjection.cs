@@ -7,8 +7,12 @@
             services.AddTransient<IHttpContextAccessor, HttpContextAccessor>();
 
             services.AddTransient<IUserService, UserService>();
-            
+
+            services.AddTransient<IClientService, ClientService>();
+
             services.AddScoped<TokenService>();
+
+            services.AddScoped<IEmailService, EmailService>();
 
             return services;
         }

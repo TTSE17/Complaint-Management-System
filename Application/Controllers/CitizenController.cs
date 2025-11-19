@@ -1,30 +1,33 @@
-﻿using Business_Layer.Consts;
-using Microsoft.AspNetCore.Identity;
-
-namespace Application.Controllers;
+﻿namespace Application.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-public class CitizenController(IUserService userService) : ControllerBase
+public class CitizenController(IClientService clientService) : ControllerBase
 {
     [HttpPost("Register")]
     public async Task<IActionResult> Register(CreateUserDto request)
     {
-        if (request.Password.Trim() == "")
-        {
-            var res = new Response<string>
-            {
-                Error = "Password is required"
-            };
-
-            return BadRequest(res);
-        }
-
-        var response = await userService.Register(request, UserType.Citizen, Roles.Citizen);
+        var response = await clientService.ClientRegister(request);
 
         if (response.Success)
             return Ok(response);
 
         return BadRequest(response);
+    }
+
+    [HttpPost("Login")]
+    public async Task<IActionResult> Login(LoginDto request)
+    {
+        var response = await clientService.Login(request);
+
+        if (!response.Success)
+            return Unauthorized(response);
+
+        var isEmailConfirmed = response.Result.IsEmailConfirmed;
+
+        if (!isEmailConfirmed)
+            return Conflict();
+
+        return Ok(response);
     }
 }

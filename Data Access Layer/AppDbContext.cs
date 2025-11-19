@@ -2,9 +2,12 @@
 
 namespace Data_Access_Layer;
 
-public class AppDbContext(DbContextOptions<AppDbContext> options) : IdentityDbContext(options)
+public class AppDbContext(DbContextOptions<AppDbContext> options)
+    : IdentityDbContext<User, IdentityRole<int>, int>(options)
 {
     public new DbSet<User> Users { get; set; }
+
+    public DbSet<Client> Clients { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

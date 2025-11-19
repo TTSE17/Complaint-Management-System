@@ -7,7 +7,7 @@ public static class IdentityDependencyInjection
     public static IServiceCollection AddIdentityDependencyInjection(this IServiceCollection services)
     {
         services
-            .AddIdentity<User /*IdentityUser*/, IdentityRole>
+            .AddIdentity<User /*IdentityUser*/, IdentityRole<int>>
             (
                 opt =>
                 {

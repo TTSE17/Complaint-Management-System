@@ -1,4 +1,6 @@
+using Application.Seeds;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.OpenApi;
 using Microsoft.OpenApi.Models;
 
@@ -36,6 +38,34 @@ app.MapControllers();
 app.MapOpenApi();
 
 app.UseSwaggerUI(opt => opt.SwaggerEndpoint("/openapi/v1.json", "Demo"));
+
+#region Seed
+
+using var scope = app.Services.CreateScope();
+
+var services = scope.ServiceProvider;
+
+var loggerFactory = services.GetRequiredService<ILoggerProvider>();
+
+var logger = loggerFactory.CreateLogger("app");
+
+try
+{
+    var roleManager = services.GetRequiredService<RoleManager<IdentityRole<int>>>();
+
+    await DefaultRoles.SeedAsync(roleManager);
+
+    logger.LogInformation("Data seeded");
+
+    logger.LogInformation("Application Started");
+}
+catch (Exception ex)
+{
+    logger.LogWarning(ex, "An error occurred while seeding data");
+}
+
+#endregion
+
 
 app.Run();
 
