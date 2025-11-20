@@ -11,19 +11,25 @@
         {
             var response = new Response<AuthResponse>();
 
-            var isValidEmail = new EmailAddressAttribute().IsValid(dto.UserNameEmail);
+            // var isValidEmail = new EmailAddressAttribute().IsValid(dto.UserNameEmail);
+            //
+            // User? user;
+            //
+            // if (isValidEmail)
+            // {
+            //     user = await userManager.FindByEmailAsync(dto.UserNameEmail);
+            // }
+            //
+            // else
+            // {
+            //     user = await userManager.FindByNameAsync(dto.UserNameEmail);
+            // }
 
-            User? user;
+            var emailPhone = dto.EmailPhone.Trim();
 
-            if (isValidEmail)
-            {
-                user = await userManager.FindByEmailAsync(dto.UserNameEmail);
-            }
-
-            else
-            {
-                user = await userManager.FindByNameAsync(dto.UserNameEmail);
-            }
+            var user = await context.Users
+                .Where(u => u.Email == emailPhone || u.PhoneNumber == emailPhone)
+                .FirstOrDefaultAsync();
 
             if (user == null || user.UserType == UserType.Citizen)
             {
@@ -32,14 +38,14 @@
                 return response;
             }
 
-            var validPassword = await userManager.CheckPasswordAsync(user, dto.Password);
-
-            if (validPassword == false)
-            {
-                response.Error = "Unable to Log In";
-
-                return response;
-            }
+            // var validPassword = await userManager.CheckPasswordAsync(user, dto.Password);
+            //
+            // if (validPassword == false)
+            // {
+            //     response.Error = "Unable to Log In";
+            //
+            //     return response;
+            // }
 
             var result = await signInManager.PasswordSignInAsync(user, dto.Password, false, false);
 
@@ -120,8 +126,7 @@
         //     return response;
         // }
 
-        
-        
+
         public async Task Logout()
         {
             await signInManager.SignOutAsync();

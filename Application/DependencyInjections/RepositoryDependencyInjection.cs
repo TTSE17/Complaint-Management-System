@@ -8,7 +8,7 @@
 
             services.AddTransient<IUserService, UserService>();
 
-            services.AddTransient<IClientService, ClientService>();
+            services.AddTransient<ICitizenService, CitizenService>();
 
             services.AddScoped<TokenService>();
 

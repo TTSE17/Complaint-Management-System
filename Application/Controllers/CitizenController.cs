@@ -2,12 +2,12 @@
 
 [Route("api/[controller]")]
 [ApiController]
-public class CitizenController(IClientService clientService) : ControllerBase
+public class CitizenController(ICitizenService citizenService) : ControllerBase
 {
     [HttpPost("Register")]
     public async Task<IActionResult> Register(CreateUserDto request)
     {
-        var response = await clientService.ClientRegister(request);
+        var response = await citizenService.ClientRegister(request);
 
         if (response.Success)
             return Ok(response);
@@ -18,7 +18,7 @@ public class CitizenController(IClientService clientService) : ControllerBase
     [HttpPost("Login")]
     public async Task<IActionResult> Login(LoginDto request)
     {
-        var response = await clientService.Login(request);
+        var response = await citizenService.Login(request);
 
         if (!response.Success)
             return Unauthorized(response);

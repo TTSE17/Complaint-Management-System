@@ -1,6 +1,6 @@
 ﻿namespace Data_Access_Layer;
 
-public class Client
+public class Citizen
 {
     [Key] public int UserId { get; set; }
 

@@ -1,6 +1,6 @@
 ﻿namespace Business_Layer.IServices;
 
-public interface IClientService
+public interface ICitizenService
 {
     Task<Response<GetUserDto>> ClientRegister(CreateUserDto dto);
 

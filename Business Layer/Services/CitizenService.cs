@@ -1,11 +1,11 @@
 ﻿namespace Business_Layer.Services;
 
-public class ClientService(
+public class CitizenService(
     UserManager<User> userManager,
     SignInManager<User> signInManager,
     IMapper mapper,
     AppDbContext context,
-    TokenService tokenService) : IClientService
+    TokenService tokenService) : ICitizenService
 {
     public async Task<Response<GetUserDto>> ClientRegister(CreateUserDto dto)
     {
@@ -73,7 +73,7 @@ public class ClientService(
 
             var otp = otpResponse.Result;
 
-            var newClient = new Client
+            var newClient = new Citizen
             {
                 UserId = newUser.Id,
                 User = null!,
@@ -104,19 +104,24 @@ public class ClientService(
     {
         var response = new Response<AuthResponse>();
 
-        var isValidEmail = new EmailAddressAttribute().IsValid(dto.UserNameEmail);
+        // var isValidEmail = new EmailAddressAttribute().IsValid(dto.EmailPhone);
+        // User? user;
+        //
+        // if (isValidEmail)
+        // {
+        //     user = await userManager.FindByEmailAsync(dto.EmailPhone);
+        // }
+        //
+        // else
+        // {
+        //     user = await userManager.phone(dto.EmailPhone);
+        // }
 
-        User? user;
+        var emailPhone = dto.EmailPhone.Trim();
 
-        if (isValidEmail)
-        {
-            user = await userManager.FindByEmailAsync(dto.UserNameEmail);
-        }
-
-        else
-        {
-            user = await userManager.FindByNameAsync(dto.UserNameEmail);
-        }
+        var user = await context.Users
+            .Where(u => u.Email == emailPhone || u.PhoneNumber == emailPhone)
+            .FirstOrDefaultAsync();
 
         if (user == null)
         {
@@ -124,13 +129,6 @@ public class ClientService(
 
             return response;
         }
-
-        // var validPassword = await userManager.CheckPasswordAsync(user, dto.Password);
-        // if (validPassword == false)
-        // {
-        //     response.Error = "Unable to Log In";
-        //     return response;
-        // }
 
         var result = await signInManager.PasswordSignInAsync(user, dto.Password, false, false);
 

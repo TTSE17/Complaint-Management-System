@@ -6,8 +6,11 @@ public class AppDbContext(DbContextOptions<AppDbContext> options)
     : IdentityDbContext<User, IdentityRole<int>, int>(options)
 {
     public new DbSet<User> Users { get; set; }
-
-    public DbSet<Client> Clients { get; set; }
+    public DbSet<Citizen> Clients { get; set; }
+    
+    public DbSet<Department> Departments { get; set; }
+    
+    public DbSet<Complaint> Complaints { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
