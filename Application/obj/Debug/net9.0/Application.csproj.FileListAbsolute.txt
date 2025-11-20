@@ -47,6 +47,7 @@ C:\Users\hp\Documents\Informatics\5\الفصل الأول 2024\Internet Applicat
 C:\Users\hp\Documents\Informatics\5\الفصل الأول 2024\Internet Applications\ComplaintManagementSystem\Application\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
 C:\Users\hp\Documents\Informatics\5\الفصل الأول 2024\Internet Applications\ComplaintManagementSystem\Application\bin\Debug\net9.0\Mono.TextTemplating.dll
 C:\Users\hp\Documents\Informatics\5\الفصل الأول 2024\Internet Applications\ComplaintManagementSystem\Application\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\hp\Documents\Informatics\5\الفصل الأول 2024\Internet Applications\ComplaintManagementSystem\Application\bin\Debug\net9.0\Otp.NET.dll
 C:\Users\hp\Documents\Informatics\5\الفصل الأول 2024\Internet Applications\ComplaintManagementSystem\Application\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\hp\Documents\Informatics\5\الفصل الأول 2024\Internet Applications\ComplaintManagementSystem\Application\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\hp\Documents\Informatics\5\الفصل الأول 2024\Internet Applications\ComplaintManagementSystem\Application\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -157,6 +158,7 @@ C:\Users\hp\Documents\Informatics\5\الفصل الأول 2024\Internet Applicat
 C:\Users\hp\Documents\Informatics\5\الفصل الأول 2024\Internet Applications\ComplaintManagementSystem\Application\obj\Debug\net9.0\Application.csproj.CoreCompileInputs.cache
 C:\Users\hp\Documents\Informatics\5\الفصل الأول 2024\Internet Applications\ComplaintManagementSystem\Application\obj\Debug\net9.0\Application.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\hp\Documents\Informatics\5\الفصل الأول 2024\Internet Applications\ComplaintManagementSystem\Application\obj\Debug\net9.0\Application.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\hp\Documents\Informatics\5\الفصل الأول 2024\Internet Applications\ComplaintManagementSystem\Application\obj\Debug\net9.0\Application.sourcelink.json
 C:\Users\hp\Documents\Informatics\5\الفصل الأول 2024\Internet Applications\ComplaintManagementSystem\Application\obj\Debug\net9.0\rjimswa.dswa.cache.json
 C:\Users\hp\Documents\Informatics\5\الفصل الأول 2024\Internet Applications\ComplaintManagementSystem\Application\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 C:\Users\hp\Documents\Informatics\5\الفصل الأول 2024\Internet Applications\ComplaintManagementSystem\Application\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
@@ -171,5 +173,3 @@ C:\Users\hp\Documents\Informatics\5\الفصل الأول 2024\Internet Applicat
 C:\Users\hp\Documents\Informatics\5\الفصل الأول 2024\Internet Applications\ComplaintManagementSystem\Application\obj\Debug\net9.0\Application.pdb
 C:\Users\hp\Documents\Informatics\5\الفصل الأول 2024\Internet Applications\ComplaintManagementSystem\Application\obj\Debug\net9.0\Application.genruntimeconfig.cache
 C:\Users\hp\Documents\Informatics\5\الفصل الأول 2024\Internet Applications\ComplaintManagementSystem\Application\obj\Debug\net9.0\ref\Application.dll
-C:\Users\hp\Documents\Informatics\5\الفصل الأول 2024\Internet Applications\ComplaintManagementSystem\Application\bin\Debug\net9.0\Otp.NET.dll
-C:\Users\hp\Documents\Informatics\5\الفصل الأول 2024\Internet Applications\ComplaintManagementSystem\Application\obj\Debug\net9.0\Application.sourcelink.json

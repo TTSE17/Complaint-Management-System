@@ -8,3 +8,4 @@ global using AutoMapper;
 global using Business_Layer.DTO.Requests;
 global using Business_Layer.DTO.Responses;
 global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.AspNetCore.Identity;

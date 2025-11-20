@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "cqodTULCcsw=",
+  "dgSpecHash": "opCh2JwJKWI=",
   "success": true,
   "projectFilePath": "C:\\Users\\hp\\Documents\\Informatics\\5\\الفصل الأول 2024\\Internet Applications\\ComplaintManagementSystem\\Application\\Application.csproj",
   "expectedPackageFiles": [
@@ -101,7 +101,13 @@
     "C:\\Users\\hp\\.nuget\\packages\\system.text.json\\9.0.0-preview.5.24306.7\\system.text.json.9.0.0-preview.5.24306.7.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "C:\\Users\\hp\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
+    "C:\\Users\\hp\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\9.0.7\\microsoft.netcore.app.runtime.win-x86.9.0.7.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\9.0.7\\microsoft.netcore.app.runtime.win-x64.9.0.7.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\9.0.7\\microsoft.windowsdesktop.app.runtime.win-x86.9.0.7.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\9.0.7\\microsoft.windowsdesktop.app.runtime.win-x64.9.0.7.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\9.0.7\\microsoft.aspnetcore.app.runtime.win-x86.9.0.7.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\9.0.7\\microsoft.aspnetcore.app.runtime.win-x64.9.0.7.nupkg.sha512"
   ],
   "logs": []
 }
