@@ -4,6 +4,7 @@ using Data_Access_Layer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Application.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251120125451_Complaint")]
+    partial class Complaint
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,31 +24,6 @@ namespace Application.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
-
-            modelBuilder.Entity("Data_Access_Layer.Attachment", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("ComplaintId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("FilePath")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("UploadedAt")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ComplaintId");
-
-                    b.ToTable("Attachments");
-                });
 
             modelBuilder.Entity("Data_Access_Layer.Citizen", b =>
                 {
@@ -60,7 +38,7 @@ namespace Application.Migrations
 
                     b.HasKey("UserId");
 
-                    b.ToTable("Citizens");
+                    b.ToTable("Clients");
                 });
 
             modelBuilder.Entity("Data_Access_Layer.Complaint", b =>
@@ -102,34 +80,6 @@ namespace Application.Migrations
                     b.HasIndex("DepartmentId");
 
                     b.ToTable("Complaints");
-                });
-
-            modelBuilder.Entity("Data_Access_Layer.ComplaintHistory", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Comment")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("ComplaintId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("ComplaintHistories");
                 });
 
             modelBuilder.Entity("Data_Access_Layer.Department", b =>
@@ -367,17 +317,6 @@ namespace Application.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("Data_Access_Layer.Attachment", b =>
-                {
-                    b.HasOne("Data_Access_Layer.Complaint", "Complaint")
-                        .WithMany("Attachments")
-                        .HasForeignKey("ComplaintId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Complaint");
-                });
-
             modelBuilder.Entity("Data_Access_Layer.Citizen", b =>
                 {
                     b.HasOne("Data_Access_Layer.User", "User")
@@ -406,17 +345,6 @@ namespace Application.Migrations
                     b.Navigation("Citizen");
 
                     b.Navigation("Department");
-                });
-
-            modelBuilder.Entity("Data_Access_Layer.ComplaintHistory", b =>
-                {
-                    b.HasOne("Data_Access_Layer.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
@@ -468,11 +396,6 @@ namespace Application.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("Data_Access_Layer.Complaint", b =>
-                {
-                    b.Navigation("Attachments");
                 });
 #pragma warning restore 612, 618
         }

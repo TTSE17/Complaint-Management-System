@@ -14,13 +14,15 @@ public class Complaint
 
     public ComplaintStatus ComplaintStatus { get; init; }
 
-    public string Title { get; init; }
+    public string Title { get; init; } = null!;
 
     public string Description { get; set; } = null!;
 
     public string Location { get; set; } = null!;
 
     public DateTime StartDate { get; set; } = DateTime.Now;
+
+    public List<Attachment> Attachments { get; set; } = [];
 }
 
 public enum ComplaintStatus

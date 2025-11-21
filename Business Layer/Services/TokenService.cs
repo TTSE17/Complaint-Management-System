@@ -87,7 +87,7 @@ namespace Business_Layer.Services
         {
             var response = new Response<bool>();
 
-            var client = await context.Clients.Include(c => c.User)
+            var client = await context.Citizens.Include(c => c.User)
                 .FirstOrDefaultAsync(c => c.User.Email!.ToLower() == email.ToLower());
 
             if (client == null)
@@ -146,7 +146,7 @@ namespace Business_Layer.Services
 
             var otp = otpResponse.Result;
 
-            var client = await context.Clients.FirstAsync(c => c.UserId == user.Id);
+            var client = await context.Citizens.FirstAsync(c => c.UserId == user.Id);
 
             client.OTP = otp;
 

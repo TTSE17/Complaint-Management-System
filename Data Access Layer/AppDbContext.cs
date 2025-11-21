@@ -6,11 +6,17 @@ public class AppDbContext(DbContextOptions<AppDbContext> options)
     : IdentityDbContext<User, IdentityRole<int>, int>(options)
 {
     public new DbSet<User> Users { get; set; }
-    public DbSet<Citizen> Clients { get; set; }
-    
+    public DbSet<Citizen> Citizens { get; set; }
+
     public DbSet<Department> Departments { get; set; }
-    
+
     public DbSet<Complaint> Complaints { get; set; }
+
+    public DbSet<Attachment> Attachments { get; set; }
+
+
+    public DbSet<ComplaintHistory> ComplaintHistories { get; set; }
+
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

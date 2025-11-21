@@ -81,7 +81,7 @@ public class CitizenService(
                 OTPExpirationTime = DateTime.UtcNow.AddMinutes(2)
             };
 
-            context.Clients.Add(newClient);
+            context.Citizens.Add(newClient);
 
             await context.SaveChangesAsync();
 
@@ -139,7 +139,7 @@ public class CitizenService(
             return response;
         }
 
-        var client = await context.Clients.FirstAsync(c => c.UserId == user.Id);
+        var client = await context.Citizens.FirstAsync(c => c.UserId == user.Id);
 
         if (!user.EmailConfirmed)
         {
