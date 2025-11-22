@@ -18,6 +18,8 @@
 
             services.AddScoped<IDepartmentService, DepartmentService>();
 
+            services.AddScoped<IEmployeeService, EmployeeService>();
+
             return services;
         }
     }
