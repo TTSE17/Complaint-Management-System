@@ -14,7 +14,9 @@
 
             services.AddScoped<IEmailService, EmailService>();
 
-            services.AddTransient<IComplaintService, ComplaintService>();
+            services.AddScoped<IComplaintService, ComplaintService>();
+
+            services.AddScoped<IDepartmentService, DepartmentService>();
 
             return services;
         }

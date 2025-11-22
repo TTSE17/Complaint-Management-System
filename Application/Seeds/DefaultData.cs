@@ -14,13 +14,19 @@ public static class DefaultData
 
         try
         {
-            var roleManager = services.GetRequiredService<RoleManager<IdentityRole<int>>>();
+            // var roleManager = services.GetRequiredService<RoleManager<IdentityRole<int>>>();
 
-            var userManager = services.GetRequiredService<UserManager<User>>();
+            // await DefaultRoles.SeedAsync(roleManager);
 
-            await DefaultRoles.SeedAsync(roleManager);
+            // var userManager = services.GetRequiredService<UserManager<User>>();
 
-            await DefaultUsers.SeedAdminUserAsync(userManager, roleManager);
+            // await DefaultUsers.SeedAdminUserAsync(userManager, roleManager);
+
+            // await DefaultDepartments.SeedAdminUserAsync(userManager, roleManager);
+
+            // var appDbContext = services.GetRequiredService<AppDbContext>();
+
+            // await DefaultDepartments.SeedAsync(appDbContext);
 
             logger.LogInformation("Data seeded");
 

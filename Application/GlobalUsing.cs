@@ -10,3 +10,4 @@ global using Business_Layer.DTO.Responses;
 global using Microsoft.AspNetCore.Mvc;
 global using Microsoft.AspNetCore.Identity;
 global using Microsoft.AspNetCore.Authentication;
+global using Microsoft.AspNetCore.Authorization;

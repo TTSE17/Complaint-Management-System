@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Data Access Layer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ed66d96297f852df3cb9a823d25dbd13687ae8b7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+180afc85299e14b0b7da5018cf4a3aea2fae5bbc")]
 [assembly: System.Reflection.AssemblyProductAttribute("Data Access Layer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Data Access Layer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

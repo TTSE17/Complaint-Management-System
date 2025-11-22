@@ -46,6 +46,15 @@ public class CitizenService(
                 return response;
             }
 
+            var isPhoneExists = await context.Users.AnyAsync(u => u.PhoneNumber == dto.PhoneNumber.Trim());
+
+            if (isPhoneExists)
+            {
+                response.Error = "PhoneNumber Already Exists, Please Login";
+
+                return response;
+            }
+
             var newUser = mapper.Map<User>(dto);
 
             newUser.UserType = UserType.Citizen;
@@ -123,7 +132,7 @@ public class CitizenService(
             .Where(u => u.Email == emailPhone || u.PhoneNumber == emailPhone)
             .FirstOrDefaultAsync();
 
-        if (user == null)
+        if (user is not { UserType: UserType.Citizen })
         {
             response.Error = "Unable to Log In";
 
