@@ -5,6 +5,8 @@
         public UserProfile()
         {
             CreateMap<CreateUserDto, User>();
+            
+            CreateMap<UpdateUserDto, User>();
 
             CreateMap<User, GetUserDto>();
         }

@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.Text.Json.Serialization;
-using AutoMapper.Configuration.Annotations;
+﻿using System.Text.Json.Serialization;
 
 namespace Business_Layer.DTO.Requests;
 

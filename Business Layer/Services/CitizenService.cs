@@ -7,7 +7,7 @@ public class CitizenService(
     AppDbContext context,
     TokenService tokenService) : ICitizenService
 {
-    public async Task<Response<GetUserDto>> ClientRegister(CreateCitizenDto dto)
+    public async Task<Response<GetUserDto>> Register(CreateCitizenDto dto)
     {
         var response = new Response<GetUserDto>();
 
@@ -63,6 +63,40 @@ public class CitizenService(
         catch (Exception e)
         {
             await transaction.RollbackAsync();
+
+            response.Error = e.Message;
+        }
+
+        return response;
+    }
+
+    public async Task<Response<GetUserDto>> Update(UpdateUserDto dto)
+    {
+        var response = new Response<GetUserDto>();
+
+        // await using var transaction = await context.Database.BeginTransactionAsync();
+
+        try
+        {
+            var userResult = await userService.Update(dto);
+
+            if (!userResult.Success)
+            {
+                response.Error = userResult.Error;
+
+                return response;
+            }
+
+            // await transaction.CommitAsync();
+
+            response.Result = userResult.Result;
+
+            response.Success = true;
+        }
+
+        catch (Exception e)
+        {
+            // await transaction.RollbackAsync();
 
             response.Error = e.Message;
         }
