@@ -5,14 +5,12 @@ public class GetComplaintDto
     public int Id { get; init; }
 
     public int CitizenId { get; init; }
-
-    public GetUserDto? Citizen { get; init; }
+    public string CitizenName { get; init; } = null!;
 
     public int DepartmentId { get; init; }
-
     public string DepartmentName { get; init; } = null!;
 
-    public string ComplaintStatus { get; init; } = null!;
+    public string Status { get; init; } = null!;
 
     public string Title { get; init; } = null!;
 
@@ -23,4 +21,6 @@ public class GetComplaintDto
     public DateTime StartDate { get; set; } = DateTime.Now;
 
     public List<string>? Attachments { get; set; } = [];
+
+    public List<GetComplaintHistoryDto>? ComplaintHistories { get; set; } = [];
 }

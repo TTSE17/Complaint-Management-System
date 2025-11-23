@@ -23,6 +23,8 @@ public class Complaint
     public DateTime StartDate { get; set; } = DateTime.Now;
 
     public List<Attachment> Attachments { get; set; } = [];
+    
+    public List<ComplaintHistory> ComplaintHistories { get; set; } = [];
 }
 
 public enum ComplaintStatus

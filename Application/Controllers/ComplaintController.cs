@@ -5,11 +5,21 @@ namespace Application.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-[Authorize]
+// [Authorize]
 public class ComplaintController(IComplaintService complaintService) : ControllerBase
 {
+    [HttpGet]
+    public async Task<IActionResult> GetAllComplaints(int? citizenId = null)
+    {
+        var response = await complaintService.GetAll(c =>
+            c.CitizenId == citizenId || citizenId == null
+        );
+
+        return Ok(response);
+    }
+
     [HttpPost]
-    [Authorize(Roles = Roles.Citizen)]
+    // [Authorize(Roles = Roles.Citizen)]
     public async Task<IActionResult> Create(AddComplaintDto dto)
     {
         var response = await complaintService.Add(dto);

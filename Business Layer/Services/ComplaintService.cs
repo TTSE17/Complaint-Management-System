@@ -1,9 +1,45 @@
-﻿using Attachment = Data_Access_Layer.Attachment;
+﻿using System.Linq.Expressions;
+using Attachment = Data_Access_Layer.Attachment;
 
 namespace Business_Layer.Services;
 
 public class ComplaintService(AppDbContext context, IMapper mapper) : IComplaintService
 {
+    public async Task<Response<List<GetComplaintDto>>> GetAll(Expression<Func<Complaint, bool>>? criteria = null)
+    {
+        var response = new Response<List<GetComplaintDto>>();
+
+        var query = context.Complaints.AsNoTracking();
+
+        if (criteria != null)
+        {
+            query = query.Where(criteria);
+        }
+
+        var complaints = await query
+            .Select(c => new GetComplaintDto
+            {
+                Id = c.Id,
+                CitizenId = c.CitizenId,
+                CitizenName = c.Citizen.User.FirstName + " " + c.Citizen.User.LastName,
+                DepartmentId = c.DepartmentId,
+                DepartmentName = c.Department.Name,
+                Attachments = c.Attachments.Select(attachment => attachment.FilePath).ToList(),
+                Description = c.Description,
+                Title = c.Title,
+                Location = c.Location,
+                Status = c.ComplaintStatus.ToString(),
+                StartDate = c.StartDate
+            })
+            .ToListAsync();
+
+        response.Result = mapper.Map<List<GetComplaintDto>>(complaints);
+
+        response.Success = true;
+
+        return response;
+    }
+
     public async Task<Response<GetComplaintDto>> Add(AddComplaintDto dto)
     {
         var response = new Response<GetComplaintDto>();
@@ -75,13 +111,25 @@ public class ComplaintService(AppDbContext context, IMapper mapper) : IComplaint
         }
 
         var complaint = await query
-            .Include(c => c.Citizen)
-            .ThenInclude(c => c.User)
-            .Include(c => c.Department)
-            .Include(c => c.Attachments)
+            .Select(c => new GetComplaintDto
+            {
+                Id = c.Id,
+                CitizenId = c.CitizenId,
+                CitizenName = c.Citizen.User.FirstName + " " + c.Citizen.User.LastName,
+                DepartmentId = c.DepartmentId,
+                DepartmentName = c.Department.Name,
+                Attachments = c.Attachments.Select(attachment => attachment.FilePath).ToList(),
+                Description = c.Description,
+                Title = c.Title,
+                Location = c.Location,
+                Status = c.ComplaintStatus.ToString(),
+                StartDate = c.StartDate,
+                ComplaintHistories = c.ComplaintHistories.Select(ch => new GetComplaintHistoryDto
+                    { Comment = ch.Comment, CreatedAt = ch.CreatedAt }).ToList()
+            })
             .FirstAsync();
 
-        response.Result = mapper.Map<GetComplaintDto>(complaint);
+        response.Result = complaint;
 
         response.Success = true;
 
