@@ -1,6 +1,6 @@
 ﻿namespace Business_Layer.Services;
 
-public class EmployeeService(IMapper mapper, TokenService tokenService) : IEmployeeService
+public class AdminService(IMapper mapper, TokenService tokenService) : IAdminService
 {
     public async Task<Response<AuthResponse>> Login(User user)
     {

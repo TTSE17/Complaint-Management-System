@@ -1,4 +1,8 @@
-﻿namespace Business_Layer.DTO.Requests;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
+using AutoMapper.Configuration.Annotations;
+
+namespace Business_Layer.DTO.Requests;
 
 public class CreateUserDto
 {
@@ -7,4 +11,6 @@ public class CreateUserDto
     public string Password { get; set; } = null!;
     [Required] public string FirstName { get; set; } = null!;
     [Required] public string LastName { get; set; } = null!;
+
+    [JsonIgnore] public UserType UserType { get; set; }
 }

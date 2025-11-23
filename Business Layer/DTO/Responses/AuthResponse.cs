@@ -9,6 +9,6 @@ public class AuthResponse
     public string Token { get; set; } = null!;
 
     public string Type { get; set; } = null!;
-    
+
     public bool IsEmailConfirmed { get; set; }
 }

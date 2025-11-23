@@ -6,9 +6,9 @@
         {
             services.AddTransient<IHttpContextAccessor, HttpContextAccessor>();
 
-            services.AddTransient<IUserService, UserService>();
+            services.AddScoped<IUserService, UserService>();
 
-            services.AddTransient<ICitizenService, CitizenService>();
+            services.AddScoped<ICitizenService, CitizenService>();
 
             services.AddScoped<TokenService>();
 
@@ -19,6 +19,10 @@
             services.AddScoped<IDepartmentService, DepartmentService>();
 
             services.AddScoped<IEmployeeService, EmployeeService>();
+
+            services.AddScoped<IAdminService, AdminService>();
+            
+            services.AddScoped<IAccountService, AccountService>();
 
             return services;
         }

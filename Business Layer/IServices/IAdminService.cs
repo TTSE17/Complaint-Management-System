@@ -1,7 +1,6 @@
 ﻿namespace Business_Layer.IServices;
 
-public interface IEmployeeService
+public interface IAdminService
 {
     Task<Response<AuthResponse>> Login(User user);
-
 }

@@ -1,81 +1,38 @@
 ﻿namespace Business_Layer.Services;
 
 public class CitizenService(
+    IUserService userService,
     UserManager<User> userManager,
-    SignInManager<User> signInManager,
     IMapper mapper,
     AppDbContext context,
     TokenService tokenService) : ICitizenService
 {
-    public async Task<Response<GetUserDto>> ClientRegister(CreateUserDto dto)
+    public async Task<Response<GetUserDto>> ClientRegister(CreateCitizenDto dto)
     {
         var response = new Response<GetUserDto>();
 
+        await using var transaction = await context.Database.BeginTransactionAsync();
+
         try
         {
-            // var existingUser = await userManager.FindByEmailAsync(dto.Email.Trim());
-            //
-            // var existingUserId = existingUser?.Id;
-            //
-            // var isNameExists = await context.Users.AnyAsync
-            //     (u => u.Id != existingUserId && u.UserName == dto.UserName.Trim());
-            //
-            // if (isNameExists)
-            // {
-            //     response.Error = "Name already taken";
-            //
-            //     return response;
-            // }
+            dto.UserType = UserType.Citizen;
 
-            var isNameExists =
-                await context.Users.AnyAsync(u => u.UserName == dto.FirstName.Trim() + dto.LastName.Trim());
+            var userResult = await userService.Register(dto);
 
-            if (isNameExists)
+            if (!userResult.Success)
             {
-                response.Error = "Firstname and Lastname already exist, Please Login";
+                response.Error = userResult.Error;
 
                 return response;
             }
 
-            var isEmailExists = await context.Users.AnyAsync(u => u.Email == dto.Email.Trim());
+            var user = userResult.Result;
 
-            if (isEmailExists)
-            {
-                response.Error = "Email Already Exists, Please Login";
-
-                return response;
-            }
-
-            var isPhoneExists = await context.Users.AnyAsync(u => u.PhoneNumber == dto.PhoneNumber.Trim());
-
-            if (isPhoneExists)
-            {
-                response.Error = "PhoneNumber Already Exists, Please Login";
-
-                return response;
-            }
-
-            var newUser = mapper.Map<User>(dto);
-
-            newUser.UserType = UserType.Citizen;
-            newUser.UserName = dto.FirstName.Trim() + dto.LastName.Trim();
-
-            var result = await userManager.CreateAsync(newUser, dto.Password);
-
-            if (!result.Succeeded)
-            {
-                var errors = string.Join(", ", result.Errors.Select(e => e.Description));
-
-                response.Error = $"Password validation failed: {errors}";
-
-                return response;
-            }
-
-            var otpResponse = await tokenService.RequestOTP(newUser);
+            var otpResponse = await tokenService.RequestOTP(user);
 
             if (!otpResponse.Success)
             {
-                response.Error = response.Error;
+                response.Error = otpResponse.Error;
 
                 return response;
             }
@@ -84,7 +41,7 @@ public class CitizenService(
 
             var newClient = new Citizen
             {
-                UserId = newUser.Id,
+                UserId = user.Id,
                 User = null!,
                 OTP = otp,
                 OTPExpirationTime = DateTime.UtcNow.AddMinutes(2)
@@ -94,59 +51,28 @@ public class CitizenService(
 
             await context.SaveChangesAsync();
 
-            await userManager.AddToRoleAsync(newUser, Roles.Citizen);
+            await transaction.CommitAsync();
+
+            await userManager.AddToRoleAsync(user, Roles.Citizen);
+
+            response.Result = mapper.Map<GetUserDto>(user);
 
             response.Success = true;
-
-            response.Result = mapper.Map<GetUserDto>(newUser);
         }
 
         catch (Exception e)
         {
+            await transaction.RollbackAsync();
+
             response.Error = e.Message;
         }
 
         return response;
     }
 
-    public async Task<Response<AuthResponse>> Login(LoginDto dto)
+    public async Task<Response<AuthResponse>> Login(User user)
     {
         var response = new Response<AuthResponse>();
-
-        // var isValidEmail = new EmailAddressAttribute().IsValid(dto.EmailPhone);
-        // User? user;
-        //
-        // if (isValidEmail)
-        // {
-        //     user = await userManager.FindByEmailAsync(dto.EmailPhone);
-        // }
-        //
-        // else
-        // {
-        //     user = await userManager.phone(dto.EmailPhone);
-        // }
-
-        var emailPhone = dto.EmailPhone.Trim();
-
-        var user = await context.Users
-            .Where(u => u.Email == emailPhone || u.PhoneNumber == emailPhone)
-            .FirstOrDefaultAsync();
-
-        if (user is not { UserType: UserType.Citizen })
-        {
-            response.Error = "Unable to Log In";
-
-            return response;
-        }
-
-        var result = await signInManager.PasswordSignInAsync(user, dto.Password, false, false);
-
-        if (!result.Succeeded)
-        {
-            response.Error = "Unable to Log In";
-
-            return response;
-        }
 
         var client = await context.Citizens.FirstAsync(c => c.UserId == user.Id);
 
@@ -182,23 +108,18 @@ public class CitizenService(
             return response;
         }
 
-        if (dto.Fcm != null)
-        {
-            user.Fcm = dto.Fcm;
-
-            await context.SaveChangesAsync();
-        }
-
-        response.Success = true;
+        var userDto = mapper.Map<GetUserDto>(user);
 
         response.Result = new AuthResponse
         {
             Token = await tokenService.CreateJwtToken(user),
             UserId = user.Id,
-            User = mapper.Map<GetUserDto>(user),
+            User = userDto,
             Type = user.UserType.ToString(),
             IsEmailConfirmed = true
         };
+
+        response.Success = true;
 
         return response;
     }

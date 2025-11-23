@@ -31,7 +31,7 @@ public static class DefaultUsers
             FirstName = "admin",
             LastName = "admin",
             UserName = "admin",
-            UserType = UserType.Admiin,
+            UserType = UserType.Admin,
             Email = "admin@gmail.com",
             EmailConfirmed = true,
             PhoneNumber = "0987654321",

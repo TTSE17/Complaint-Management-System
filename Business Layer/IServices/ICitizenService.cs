@@ -2,7 +2,7 @@
 
 public interface ICitizenService
 {
-    Task<Response<GetUserDto>> ClientRegister(CreateUserDto dto);
+    Task<Response<GetUserDto>> ClientRegister(CreateCitizenDto dto);
 
-    Task<Response<AuthResponse>> Login(LoginDto dto);
+    Task<Response<AuthResponse>> Login(User dto);
 }

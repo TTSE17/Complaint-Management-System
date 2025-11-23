@@ -2,10 +2,6 @@
 {
     public interface IUserService
     {
-        Task<Response<AuthResponse>> Login(LoginDto dto);
-
-        // Task<Response<GetUserDto>> Update(UpdateUserDto dto);
-
-        Task Logout();
+        Task<Response<User>> Register(CreateUserDto dto);
     }
 }

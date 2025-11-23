@@ -2,7 +2,7 @@
 
 public enum UserType
 {
-    Admiin,
+    Admin,
     Citizen,
     Employee
 }
