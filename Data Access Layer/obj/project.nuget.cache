@@ -40,5 +40,15 @@
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\9.0.7\\microsoft.aspnetcore.app.runtime.win-x86.9.0.7.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\9.0.7\\microsoft.aspnetcore.app.runtime.win-x64.9.0.7.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.",
+      "projectPath": "C:\\Users\\hp\\Documents\\Informatics\\5\\الفصل الأول 2024\\Internet Applications\\ComplaintManagementSystem\\Data Access Layer\\Data Access Layer.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\hp\\Documents\\Informatics\\5\\الفصل الأول 2024\\Internet Applications\\ComplaintManagementSystem\\Data Access Layer\\Data Access Layer.csproj",
+      "targetGraphs": []
+    }
+  ]
 }

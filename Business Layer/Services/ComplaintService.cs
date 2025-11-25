@@ -28,12 +28,12 @@ public class ComplaintService(AppDbContext context, IMapper mapper) : IComplaint
                 Description = c.Description,
                 Title = c.Title,
                 Location = c.Location,
-                Status = c.ComplaintStatus.ToString(),
+                Status = c.Status.ToString(),
                 StartDate = c.StartDate
             })
             .ToListAsync();
 
-        response.Result = mapper.Map<List<GetComplaintDto>>(complaints);
+        response.Result = complaints;
 
         response.Success = true;
 
@@ -76,7 +76,7 @@ public class ComplaintService(AppDbContext context, IMapper mapper) : IComplaint
                 Comment = "Add Complaint",
                 CreatedAt = DateTime.Now,
             };
-
+            
             await context.ComplaintHistories.AddAsync(complaintHistory);
 
             await context.SaveChangesAsync();
@@ -122,7 +122,7 @@ public class ComplaintService(AppDbContext context, IMapper mapper) : IComplaint
                 Description = c.Description,
                 Title = c.Title,
                 Location = c.Location,
-                Status = c.ComplaintStatus.ToString(),
+                Status = c.Status.ToString(),
                 StartDate = c.StartDate,
                 ComplaintHistories = c.ComplaintHistories.Select(ch => new GetComplaintHistoryDto
                     { Comment = ch.Comment, CreatedAt = ch.CreatedAt }).ToList()

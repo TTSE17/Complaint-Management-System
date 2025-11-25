@@ -2,19 +2,19 @@
 
 public class Complaint
 {
-    public int Id { get; init; }
+    public int Id { get; set; }
 
-    public int CitizenId { get; init; }
+    public int CitizenId { get; set; }
 
-    public Citizen Citizen { get; init; } = null!;
+    public Citizen Citizen { get; set; } = null!;
 
-    public int DepartmentId { get; init; }
+    public int DepartmentId { get; set; }
 
-    public Department Department { get; init; } = null!;
+    public Department Department { get; set; } = null!;
 
-    public ComplaintStatus ComplaintStatus { get; init; }
+    public ComplaintStatus Status { get; set; }
 
-    public string Title { get; init; } = null!;
+    public string Title { get; set; } = null!;
 
     public string Description { get; set; } = null!;
 
@@ -23,7 +23,7 @@ public class Complaint
     public DateTime StartDate { get; set; } = DateTime.Now;
 
     public List<Attachment> Attachments { get; set; } = [];
-    
+
     public List<ComplaintHistory> ComplaintHistories { get; set; } = [];
 }
 
