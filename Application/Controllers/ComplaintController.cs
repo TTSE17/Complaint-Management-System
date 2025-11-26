@@ -1,7 +1,4 @@
-﻿using Business_Layer.Consts;
-using Microsoft.AspNetCore.Authorization;
-
-namespace Application.Controllers;
+﻿namespace Application.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]

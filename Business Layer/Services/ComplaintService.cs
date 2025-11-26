@@ -1,5 +1,4 @@
 ﻿using System.Linq.Expressions;
-using Attachment = Data_Access_Layer.Attachment;
 
 namespace Business_Layer.Services;
 
@@ -24,12 +23,12 @@ public class ComplaintService(AppDbContext context, IMapper mapper) : IComplaint
                 CitizenName = c.Citizen.User.FirstName + " " + c.Citizen.User.LastName,
                 DepartmentId = c.DepartmentId,
                 DepartmentName = c.Department.Name,
-                Attachments = c.Attachments.Select(attachment => attachment.FilePath).ToList(),
+                // Attachments = c.Attachments.Select(attachment => attachment.FilePath).ToList(),
                 Description = c.Description,
                 Title = c.Title,
                 Location = c.Location,
                 Status = c.Status.ToString(),
-                StartDate = c.StartDate
+                StartDate = c.CreatedAt
             })
             .ToListAsync();
 
@@ -44,42 +43,58 @@ public class ComplaintService(AppDbContext context, IMapper mapper) : IComplaint
     {
         var response = new Response<GetComplaintDto>();
 
+        await using var transaction = await context.Database.BeginTransactionAsync();
+
         try
         {
             var complaintToAdd = mapper.Map<Complaint>(dto);
 
             var paths = dto.Paths;
 
-            if (paths != null && paths.Count != 0)
+            if (paths?.Count > 0)
             {
-                foreach (var attachment in paths.Select(path => new Attachment
-                         {
-                             ComplaintId = complaintToAdd.Id,
-                             FilePath = path,
-                             UploadedAt = DateTime.Now
-                         }))
-                {
-                    // await context.Attachments.AddAsync(attachment);
+                // foreach (var path in paths)
+                // {
+                //     var attachment = new Attachment
+                //     {
+                //         ComplaintId = complaintToAdd.Id,
+                //         FilePath = path,
+                //         UploadedAt = DateTime.Now
+                //     };
+                //
+                //     complaintToAdd.Attachments.Add(attachment);
+                // }
 
-                    complaintToAdd.Attachments.Add(attachment);
-                }
+                complaintToAdd.Attachments = paths.Select(path =>
+                    new Attachment
+                    {
+                        FilePath = path,
+                        UploadedAt = DateTime.UtcNow
+                    }).ToList();
             }
 
             var complaint = await context.Complaints.AddAsync(complaintToAdd);
 
             await context.SaveChangesAsync();
 
+            // Map
             var complaintHistory = new ComplaintHistory
             {
                 ComplaintId = complaintToAdd.Id,
                 UserId = dto.CitizenId,
-                Comment = "Add Complaint",
+                DepartmentId = dto.DepartmentId,
+                Title = dto.Title,
+                Location = dto.Location,
+                Description = dto.Description,
+                Status = complaintToAdd.Status,
                 CreatedAt = DateTime.Now,
             };
-            
+
             await context.ComplaintHistories.AddAsync(complaintHistory);
 
             await context.SaveChangesAsync();
+
+            await transaction.CommitAsync();
 
             // await firebaseService.NotifyAdmin("New Complaint",complaintToAdd.Title + " : " + complaintToAdd.Description);
 
@@ -91,6 +106,8 @@ public class ComplaintService(AppDbContext context, IMapper mapper) : IComplaint
         }
         catch (Exception e)
         {
+            await transaction.RollbackAsync();
+
             response.Error = e.Message;
         }
 
@@ -123,9 +140,7 @@ public class ComplaintService(AppDbContext context, IMapper mapper) : IComplaint
                 Title = c.Title,
                 Location = c.Location,
                 Status = c.Status.ToString(),
-                StartDate = c.StartDate,
-                ComplaintHistories = c.ComplaintHistories.Select(ch => new GetComplaintHistoryDto
-                    { Comment = ch.Comment, CreatedAt = ch.CreatedAt }).ToList()
+                StartDate = c.CreatedAt
             })
             .FirstAsync();
 

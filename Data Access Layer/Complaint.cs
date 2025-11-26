@@ -20,11 +20,11 @@ public class Complaint
 
     public string Location { get; set; } = null!;
 
-    public DateTime StartDate { get; set; } = DateTime.Now;
+    public DateTime CreatedAt { get; set; } = DateTime.Now;
 
     public List<Attachment> Attachments { get; set; } = [];
 
-    public List<ComplaintHistory> ComplaintHistories { get; set; } = [];
+    // public List<ComplaintHistory> ComplaintHistories { get; set; } = [];
 }
 
 public enum ComplaintStatus

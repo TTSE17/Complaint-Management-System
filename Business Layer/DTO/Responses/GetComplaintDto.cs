@@ -21,6 +21,4 @@ public class GetComplaintDto
     public DateTime StartDate { get; set; } = DateTime.Now;
 
     public List<string>? Attachments { get; set; } = [];
-
-    public List<GetComplaintHistoryDto>? ComplaintHistories { get; set; } = [];
 }
