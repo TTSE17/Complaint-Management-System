@@ -11,8 +11,10 @@ public class ComplaintProfile : Profile
                 opt.MapFrom(src => src.Attachments.Select(attachment => attachment.FilePath).ToList()))
             .ForMember(des => des.CitizenName, opt =>
                 opt.MapFrom(src => src.Citizen.User.FirstName + " " + src.Citizen.User.LastName))
-           ;
+            ;
 
         CreateMap<AddComplaintDto, Complaint>();
+
+        CreateMap<UpdateComplaintDto, Complaint>();
     }
 }

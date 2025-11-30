@@ -22,9 +22,9 @@ public class Complaint
 
     public DateTime CreatedAt { get; set; } = DateTime.Now;
 
-    public List<Attachment> Attachments { get; set; } = [];
+    public string HistoryJson { get; set; } = ""; // array of previous versions    
 
-    // public List<ComplaintHistory> ComplaintHistories { get; set; } = [];
+    public List<Attachment> Attachments { get; set; } = [];
 }
 
 public enum ComplaintStatus

@@ -10,7 +10,5 @@ public class Attachment
 
     public string FilePath { get; set; } = null!;
 
-    // public string FileType { get; set; }
-
     public DateTime UploadedAt { get; set; } = DateTime.Now;
 }

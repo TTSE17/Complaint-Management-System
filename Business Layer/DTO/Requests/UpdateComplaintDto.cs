@@ -1,8 +1,8 @@
 ﻿namespace Business_Layer.DTO.Requests;
 
-public class AddComplaintDto
+public class UpdateComplaintDto
 {
-    public int CitizenId { get; init; }
+    public int Id { get; set; }
 
     public int DepartmentId { get; init; }
 
@@ -13,4 +13,4 @@ public class AddComplaintDto
     public string Location { get; set; } = null!;
 
     public List<string> Paths { get; set; } = [];
-};
+}
