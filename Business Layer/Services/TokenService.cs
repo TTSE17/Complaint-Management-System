@@ -33,9 +33,9 @@ namespace Business_Layer.Services
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Issuer = options.Issuer,
+                
                 Audience = options.Audience,
-
-
+                
                 Subject = new ClaimsIdentity
                 (
                     claims

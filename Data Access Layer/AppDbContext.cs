@@ -13,6 +13,8 @@ public class AppDbContext(DbContextOptions<AppDbContext> options)
 
     public DbSet<Employee> Employees { get; set; }
 
+    public DbSet<Notification> Notifications { get; set; }
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);

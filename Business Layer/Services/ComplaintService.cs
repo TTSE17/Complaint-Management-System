@@ -207,7 +207,9 @@ public class ComplaintService(AppDbContext context, IMapper mapper) : IComplaint
             if (newAttachments)
                 action += ", New Attachments";
 
-            var historyList = JsonSerializer.Deserialize<List<ComplaintSnapshot>>(complaint.HistoryJson)!;
+            var historyList = complaint.HistoryJson == ""
+                ? []
+                : JsonSerializer.Deserialize<List<ComplaintSnapshot>>(complaint.HistoryJson) ?? [];
 
             var snapshot = new ComplaintSnapshot
             {

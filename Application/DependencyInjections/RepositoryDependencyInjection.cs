@@ -21,8 +21,12 @@
             services.AddScoped<IEmployeeService, EmployeeService>();
 
             services.AddScoped<IAdminService, AdminService>();
-            
+
             services.AddScoped<IAccountService, AccountService>();
+
+            services.AddScoped<IFirebaseService, FirebaseService>();
+
+            services.AddScoped<INotificationService, NotificationService>();
 
             return services;
         }
