@@ -1,4 +1,8 @@
+using AspectCore.Extensions.DependencyInjection;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Host.UseServiceProviderFactory(new DynamicProxyServiceProviderFactory());
 
 var jwtOptions = builder.Configuration.GetSection("JWT").Get<JwtOptions>()!;
 builder.Services.AddSingleton(jwtOptions);

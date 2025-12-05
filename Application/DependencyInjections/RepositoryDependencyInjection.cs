@@ -28,6 +28,8 @@
 
             services.AddScoped<INotificationService, NotificationService>();
 
+            services.AddScoped<ITraceLogService, TraceLogService>();
+
             return services;
         }
     }

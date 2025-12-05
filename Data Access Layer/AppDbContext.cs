@@ -15,6 +15,8 @@ public class AppDbContext(DbContextOptions<AppDbContext> options)
 
     public DbSet<Notification> Notifications { get; set; }
 
+    public DbSet<TraceLog> TraceLogs { get; set; }
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);

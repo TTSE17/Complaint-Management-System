@@ -8,7 +8,7 @@ namespace Business_Layer.DTO.Responses
 
         public bool Success { get; set; }
 
-        public object Error { get; set; }
+        public object? Error { get; set; }
 
         // public bool UnAuthorizedRequest { get; set; }
 

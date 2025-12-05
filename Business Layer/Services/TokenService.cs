@@ -19,12 +19,12 @@ namespace Business_Layer.Services
             var claims = new List<Claim>
             {
                 new(ClaimTypes.NameIdentifier, user.Id.ToString()),
-                new(ClaimTypes.Name, user.UserName!),
+                new(ClaimTypes.Name, user.FirstName + " " + user.LastName),
                 new(ClaimTypes.Email, user.Email!)
             };
 
             var roles = await userManager.GetRolesAsync(user);
-            
+
             foreach (var role in roles)
             {
                 claims.Add(new Claim(ClaimTypes.Role, role));
@@ -33,9 +33,9 @@ namespace Business_Layer.Services
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Issuer = options.Issuer,
-                
+
                 Audience = options.Audience,
-                
+
                 Subject = new ClaimsIdentity
                 (
                     claims
@@ -154,7 +154,7 @@ namespace Business_Layer.Services
             client.OTPExpirationTime = DateTime.UtcNow.AddMinutes(2);
 
             await context.SaveChangesAsync();
-            
+
             response.Success = true;
 
             response.Result = "OTP Send Success!";

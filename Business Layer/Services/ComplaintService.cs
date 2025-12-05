@@ -5,6 +5,7 @@ namespace Business_Layer.Services;
 
 public class ComplaintService(AppDbContext context, IMapper mapper) : IComplaintService
 {
+    [TracingAspect("View Complaints")]
     public async Task<Response<List<GetComplaintDto>>> GetAll(Expression<Func<Complaint, bool>>? criteria = null)
     {
         var response = new Response<List<GetComplaintDto>>();
@@ -35,7 +36,9 @@ public class ComplaintService(AppDbContext context, IMapper mapper) : IComplaint
 
         response.Result = complaints;
 
-        response.Success = true;
+        response.Success = false;
+
+        response.Error = "complaints";
 
         return response;
     }
