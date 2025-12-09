@@ -40,8 +40,6 @@ public class TracingAspect(string action) : AbstractInterceptorAttribute
 
                 log.UserName = user.FindFirstValue(ClaimTypes.Name);
             }
-
-            log.IsSuccess = true;
         }
         catch (Exception ex)
         {

@@ -35,7 +35,7 @@ app.MapControllers();
 
 app.MapOpenApi();
 
-app.UseSwaggerUI(opt => opt.SwaggerEndpoint("/openapi/v1.json", "Demo"));
+app.UseSwaggerUI(opt => opt.SwaggerEndpoint("/openapi/v1.json", "Complaint Management System 1.0"));
 
 #region Seed
 

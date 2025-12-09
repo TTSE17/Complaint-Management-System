@@ -4,6 +4,10 @@ C:\Users\hp\Downloads\published\3\appsettings.json
 C:\Users\hp\Downloads\published\3\Application.dll
 C:\Users\hp\Downloads\published\3\Application.runtimeconfig.json
 C:\Users\hp\Downloads\published\3\Application.pdb
+C:\Users\hp\Downloads\published\3\AspectCore.Abstractions.dll
+C:\Users\hp\Downloads\published\3\AspectCore.Core.dll
+C:\Users\hp\Downloads\published\3\AspectCore.Extensions.DependencyInjection.dll
+C:\Users\hp\Downloads\published\3\AspectCore.Extensions.Reflection.dll
 C:\Users\hp\Downloads\published\3\AutoMapper.dll
 C:\Users\hp\Downloads\published\3\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\hp\Downloads\published\3\Azure.Core.dll
@@ -23,6 +27,12 @@ C:\Users\hp\Downloads\published\3\Microsoft.EntityFrameworkCore.dll
 C:\Users\hp\Downloads\published\3\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\hp\Downloads\published\3\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\hp\Downloads\published\3\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\hp\Downloads\published\3\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\hp\Downloads\published\3\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\hp\Downloads\published\3\Microsoft.Extensions.Logging.dll
+C:\Users\hp\Downloads\published\3\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\hp\Downloads\published\3\Microsoft.Extensions.Options.dll
+C:\Users\hp\Downloads\published\3\Microsoft.Extensions.Primitives.dll
 C:\Users\hp\Downloads\published\3\Microsoft.Identity.Client.dll
 C:\Users\hp\Downloads\published\3\Microsoft.Identity.Client.Extensions.Msal.dll
 C:\Users\hp\Downloads\published\3\Microsoft.IdentityModel.Abstractions.dll

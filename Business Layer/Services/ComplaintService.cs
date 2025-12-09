@@ -36,10 +36,8 @@ public class ComplaintService(AppDbContext context, IMapper mapper) : IComplaint
 
         response.Result = complaints;
 
-        response.Success = false;
-
-        response.Error = "complaints";
-
+        response.Success = true;
+        
         return response;
     }
 
