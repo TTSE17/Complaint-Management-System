@@ -3,7 +3,6 @@
   "WorkspaceRootPath": "D:\\store\\study\\.net.project\\Complaint-Management-System\\",
   "Documents": [
     {
-<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{7BD360A9-C9F0-40B7-8E12-B51272EBF6C1}|Business Layer\\Business Layer.csproj|d:\\store\\study\\.net.project\\complaint-management-system\\business layer\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BD360A9-C9F0-40B7-8E12-B51272EBF6C1}|Business Layer\\Business Layer.csproj|solutionrelative:business layer\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -24,13 +23,10 @@
       "RelativeMoniker": "D:0:0:{4BF054F2-8D1C-485C-809A-A59F332A9F8F}|Data Access Layer\\Data Access Layer.csproj|solutionrelative:data access layer\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-=======
->>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{28B62301-DB10-4765-B8C8-7A61E1E7B7D3}|Application\\Application.csproj|d:\\store\\study\\.net.project\\complaint-management-system\\application\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28B62301-DB10-4765-B8C8-7A61E1E7B7D3}|Application\\Application.csproj|solutionrelative:application\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{7BD360A9-C9F0-40B7-8E12-B51272EBF6C1}|Business Layer\\Business Layer.csproj|d:\\store\\study\\.net.project\\complaint-management-system\\business layer\\jwtoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BD360A9-C9F0-40B7-8E12-B51272EBF6C1}|Business Layer\\Business Layer.csproj|solutionrelative:business layer\\jwtoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -61,18 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7BD360A9-C9F0-40B7-8E12-B51272EBF6C1}|Business Layer\\Business Layer.csproj|d:\\store\\study\\.net.project\\complaint-management-system\\business layer\\iservices\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BD360A9-C9F0-40B7-8E12-B51272EBF6C1}|Business Layer\\Business Layer.csproj|solutionrelative:business layer\\iservices\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-      "AbsoluteMoniker": "D:0:0:{28B62301-DB10-4765-B8C8-7A61E1E7B7D3}|Application\\Application.csproj|d:\\store\\study\\.net.project\\complaint-management-system\\application\\seeds\\defaultdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28B62301-DB10-4765-B8C8-7A61E1E7B7D3}|Application\\Application.csproj|solutionrelative:application\\seeds\\defaultdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28B62301-DB10-4765-B8C8-7A61E1E7B7D3}|Application\\Application.csproj|d:\\store\\study\\.net.project\\complaint-management-system\\application\\controllers\\citizencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28B62301-DB10-4765-B8C8-7A61E1E7B7D3}|Application\\Application.csproj|solutionrelative:application\\controllers\\citizencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28B62301-DB10-4765-B8C8-7A61E1E7B7D3}|Application\\Application.csproj|d:\\store\\study\\.net.project\\complaint-management-system\\application\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28B62301-DB10-4765-B8C8-7A61E1E7B7D3}|Application\\Application.csproj|solutionrelative:application\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -82,7 +66,6 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< Updated upstream
           "SelectedChildIndex": 6,
           "Children": [
             {
@@ -168,7 +151,7 @@
               "RelativeDocumentMoniker": "Business Layer\\Services\\AccountService.cs",
               "ToolTip": "D:\\store\\study\\.net.project\\Complaint-Management-System\\Business Layer\\Services\\AccountService.cs",
               "RelativeToolTip": "Business Layer\\Services\\AccountService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-09T11:51:07.188Z",
               "EditorCaption": ""
@@ -176,19 +159,11 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-=======
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
->>>>>>> Stashed changes
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\store\\study\\.net.project\\Complaint-Management-System\\Application\\Program.cs",
               "RelativeDocumentMoniker": "Application\\Program.cs",
               "ToolTip": "D:\\store\\study\\.net.project\\Complaint-Management-System\\Application\\Program.cs",
               "RelativeToolTip": "Application\\Program.cs",
-<<<<<<< Updated upstream
               "ViewState": "AgIAAAEAAAAAAAAAAAAmwBcAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-09T11:49:41.514Z"
@@ -264,48 +239,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-08T20:08:28.05Z"
-=======
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T09:15:08.781Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DefaultData.cs",
-              "DocumentMoniker": "D:\\store\\study\\.net.project\\Complaint-Management-System\\Application\\Seeds\\DefaultData.cs",
-              "RelativeDocumentMoniker": "Application\\Seeds\\DefaultData.cs",
-              "ToolTip": "D:\\store\\study\\.net.project\\Complaint-Management-System\\Application\\Seeds\\DefaultData.cs",
-              "RelativeToolTip": "Application\\Seeds\\DefaultData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T09:15:04.34Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CitizenController.cs",
-              "DocumentMoniker": "D:\\store\\study\\.net.project\\Complaint-Management-System\\Application\\Controllers\\CitizenController.cs",
-              "RelativeDocumentMoniker": "Application\\Controllers\\CitizenController.cs",
-              "ToolTip": "D:\\store\\study\\.net.project\\Complaint-Management-System\\Application\\Controllers\\CitizenController.cs",
-              "RelativeToolTip": "Application\\Controllers\\CitizenController.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T09:13:58.69Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\store\\study\\.net.project\\Complaint-Management-System\\Application\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Application\\Controllers\\AccountController.cs",
-              "ToolTip": "D:\\store\\study\\.net.project\\Complaint-Management-System\\Application\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Application\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T09:13:19.842Z"
->>>>>>> Stashed changes
             }
           ]
         },
