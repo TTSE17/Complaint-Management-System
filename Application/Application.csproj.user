@@ -3,8 +3,11 @@
   <PropertyGroup>
     <ActiveDebugProfile>https</ActiveDebugProfile>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <Controller_SelectedScaffolderID>ApiControllerEmptyScaffolder</Controller_SelectedScaffolderID>
     <Controller_SelectedScaffolderCategoryPath>root/Common/Api</Controller_SelectedScaffolderCategoryPath>
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
   </PropertyGroup>

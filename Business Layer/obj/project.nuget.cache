@@ -1,6 +1,7 @@
 {
   "version": 2,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "dgSpecHash": "O8lb2q/2oTk=",
   "success": true,
   "projectFilePath": "D:\\store\\study\\.net.project\\Complaint-Management-System\\Business Layer\\Business Layer.csproj",
@@ -10,10 +11,19 @@
   "success": true,
   "projectFilePath": "D:\\store\\study\\.net.project\\Complaint-Management-System\\Business Layer\\Business Layer.csproj",
   "expectedPackageFiles": [
+=======
+  "dgSpecHash": "1rBBwW8tEHY=",
+  "success": true,
+  "projectFilePath": "D:\\store\\study\\.net.project\\Complaint-Management-System\\Business Layer\\Business Layer.csproj",
+  "expectedPackageFiles": [
+>>>>>>> Stashed changes
     "C:\\Users\\BSH\\.nuget\\packages\\aspectcore.abstractions\\2.4.0\\aspectcore.abstractions.2.4.0.nupkg.sha512",
     "C:\\Users\\BSH\\.nuget\\packages\\aspectcore.core\\2.4.0\\aspectcore.core.2.4.0.nupkg.sha512",
     "C:\\Users\\BSH\\.nuget\\packages\\aspectcore.extensions.dependencyinjection\\2.4.0\\aspectcore.extensions.dependencyinjection.2.4.0.nupkg.sha512",
     "C:\\Users\\BSH\\.nuget\\packages\\aspectcore.extensions.reflection\\2.4.0\\aspectcore.extensions.reflection.2.4.0.nupkg.sha512",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     "C:\\Users\\BSH\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\BSH\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
@@ -53,6 +63,7 @@
     "C:\\Users\\BSH\\.nuget\\packages\\microsoft.extensions.caching.memory\\9.0.0-preview.5.24306.7\\microsoft.extensions.caching.memory.9.0.0-preview.5.24306.7.nupkg.sha512",
     "C:\\Users\\BSH\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.0-preview.5.24306.7\\microsoft.extensions.configuration.abstractions.9.0.0-preview.5.24306.7.nupkg.sha512",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "C:\\Users\\BSH\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.0-preview.5.24306.7\\microsoft.extensions.dependencyinjection.9.0.0-preview.5.24306.7.nupkg.sha512",
     "C:\\Users\\BSH\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0-preview.5.24306.7\\microsoft.extensions.dependencyinjection.abstractions.9.0.0-preview.5.24306.7.nupkg.sha512",
     "C:\\Users\\BSH\\.nuget\\packages\\microsoft.extensions.dependencymodel\\9.0.0-preview.5.24306.7\\microsoft.extensions.dependencymodel.9.0.0-preview.5.24306.7.nupkg.sha512",
@@ -63,6 +74,8 @@
     "C:\\Users\\BSH\\.nuget\\packages\\microsoft.extensions.options\\9.0.0-preview.5.24306.7\\microsoft.extensions.options.9.0.0-preview.5.24306.7.nupkg.sha512",
     "C:\\Users\\BSH\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.0-preview.5.24306.7\\microsoft.extensions.primitives.9.0.0-preview.5.24306.7.nupkg.sha512",
 =======
+=======
+>>>>>>> Stashed changes
     "C:\\Users\\BSH\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.11\\microsoft.extensions.dependencyinjection.9.0.11.nupkg.sha512",
     "C:\\Users\\BSH\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.11\\microsoft.extensions.dependencyinjection.abstractions.9.0.11.nupkg.sha512",
     "C:\\Users\\BSH\\.nuget\\packages\\microsoft.extensions.dependencymodel\\9.0.0-preview.5.24306.7\\microsoft.extensions.dependencymodel.9.0.0-preview.5.24306.7.nupkg.sha512",
@@ -72,6 +85,9 @@
     "C:\\Users\\BSH\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.11\\microsoft.extensions.logging.abstractions.9.0.11.nupkg.sha512",
     "C:\\Users\\BSH\\.nuget\\packages\\microsoft.extensions.options\\9.0.11\\microsoft.extensions.options.9.0.11.nupkg.sha512",
     "C:\\Users\\BSH\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.11\\microsoft.extensions.primitives.9.0.11.nupkg.sha512",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     "C:\\Users\\BSH\\.nuget\\packages\\microsoft.identity.client\\4.56.0\\microsoft.identity.client.4.56.0.nupkg.sha512",
     "C:\\Users\\BSH\\.nuget\\packages\\microsoft.identity.client.extensions.msal\\4.56.0\\microsoft.identity.client.extensions.msal.4.56.0.nupkg.sha512",

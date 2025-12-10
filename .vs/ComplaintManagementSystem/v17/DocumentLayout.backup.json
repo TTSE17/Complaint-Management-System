@@ -4,6 +4,7 @@
   "Documents": [
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{7BD360A9-C9F0-40B7-8E12-B51272EBF6C1}|Business Layer\\Business Layer.csproj|d:\\store\\study\\.net.project\\complaint-management-system\\business layer\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BD360A9-C9F0-40B7-8E12-B51272EBF6C1}|Business Layer\\Business Layer.csproj|solutionrelative:business layer\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,10 +27,13 @@
     {
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{28B62301-DB10-4765-B8C8-7A61E1E7B7D3}|Application\\Application.csproj|d:\\store\\study\\.net.project\\complaint-management-system\\application\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28B62301-DB10-4765-B8C8-7A61E1E7B7D3}|Application\\Application.csproj|solutionrelative:application\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{7BD360A9-C9F0-40B7-8E12-B51272EBF6C1}|Business Layer\\Business Layer.csproj|d:\\store\\study\\.net.project\\complaint-management-system\\business layer\\jwtoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BD360A9-C9F0-40B7-8E12-B51272EBF6C1}|Business Layer\\Business Layer.csproj|solutionrelative:business layer\\jwtoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -62,6 +66,8 @@
       "AbsoluteMoniker": "D:0:0:{7BD360A9-C9F0-40B7-8E12-B51272EBF6C1}|Business Layer\\Business Layer.csproj|d:\\store\\study\\.net.project\\complaint-management-system\\business layer\\iservices\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BD360A9-C9F0-40B7-8E12-B51272EBF6C1}|Business Layer\\Business Layer.csproj|solutionrelative:business layer\\iservices\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
 =======
+=======
+>>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{28B62301-DB10-4765-B8C8-7A61E1E7B7D3}|Application\\Application.csproj|d:\\store\\study\\.net.project\\complaint-management-system\\application\\seeds\\defaultdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28B62301-DB10-4765-B8C8-7A61E1E7B7D3}|Application\\Application.csproj|solutionrelative:application\\seeds\\defaultdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -72,6 +78,9 @@
     {
       "AbsoluteMoniker": "D:0:0:{28B62301-DB10-4765-B8C8-7A61E1E7B7D3}|Application\\Application.csproj|d:\\store\\study\\.net.project\\complaint-management-system\\application\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28B62301-DB10-4765-B8C8-7A61E1E7B7D3}|Application\\Application.csproj|solutionrelative:application\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     }
   ],
@@ -82,6 +91,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
           "SelectedChildIndex": 6,
           "Children": [
@@ -180,17 +190,23 @@
               "$type": "Document",
               "DocumentIndex": 5,
 =======
+=======
+>>>>>>> Stashed changes
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\store\\study\\.net.project\\Complaint-Management-System\\Application\\Program.cs",
               "RelativeDocumentMoniker": "Application\\Program.cs",
               "ToolTip": "D:\\store\\study\\.net.project\\Complaint-Management-System\\Application\\Program.cs",
               "RelativeToolTip": "Application\\Program.cs",
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
               "ViewState": "AgIAAAEAAAAAAAAAAAAmwBcAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -268,6 +284,8 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-08T20:08:28.05Z"
 =======
+=======
+>>>>>>> Stashed changes
               "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-10T09:15:08.781Z",
@@ -283,7 +301,12 @@
               "RelativeToolTip": "Application\\Seeds\\DefaultData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< Updated upstream
               "WhenOpened": "2025-12-10T09:15:04.34Z"
+=======
+              "WhenOpened": "2025-12-10T09:15:04.34Z",
+              "EditorCaption": ""
+>>>>>>> Stashed changes
             },
             {
               "$type": "Document",
@@ -295,7 +318,12 @@
               "RelativeToolTip": "Application\\Controllers\\CitizenController.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< Updated upstream
               "WhenOpened": "2025-12-10T09:13:58.69Z"
+=======
+              "WhenOpened": "2025-12-10T09:13:58.69Z",
+              "EditorCaption": ""
+>>>>>>> Stashed changes
             },
             {
               "$type": "Document",
@@ -307,7 +335,12 @@
               "RelativeToolTip": "Application\\Controllers\\AccountController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< Updated upstream
               "WhenOpened": "2025-12-10T09:13:19.842Z"
+>>>>>>> Stashed changes
+=======
+              "WhenOpened": "2025-12-10T09:13:19.842Z",
+              "EditorCaption": ""
 >>>>>>> Stashed changes
             }
           ]
