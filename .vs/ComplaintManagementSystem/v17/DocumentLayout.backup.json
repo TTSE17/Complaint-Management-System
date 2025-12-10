@@ -3,26 +3,34 @@
   "WorkspaceRootPath": "D:\\store\\study\\.net.project\\Complaint-Management-System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4BF054F2-8D1C-485C-809A-A59F332A9F8F}|Data Access Layer\\Data Access Layer.csproj|d:\\store\\study\\.net.project\\complaint-management-system\\data access layer\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BF054F2-8D1C-485C-809A-A59F332A9F8F}|Data Access Layer\\Data Access Layer.csproj|solutionrelative:data access layer\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+<<<<<<< Updated upstream
+      "AbsoluteMoniker": "D:0:0:{7BD360A9-C9F0-40B7-8E12-B51272EBF6C1}|Business Layer\\Business Layer.csproj|d:\\store\\study\\.net.project\\complaint-management-system\\business layer\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BD360A9-C9F0-40B7-8E12-B51272EBF6C1}|Business Layer\\Business Layer.csproj|solutionrelative:business layer\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD360A9-C9F0-40B7-8E12-B51272EBF6C1}|Business Layer\\Business Layer.csproj|d:\\store\\study\\.net.project\\complaint-management-system\\business layer\\services\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BD360A9-C9F0-40B7-8E12-B51272EBF6C1}|Business Layer\\Business Layer.csproj|solutionrelative:business layer\\services\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4BF054F2-8D1C-485C-809A-A59F332A9F8F}|Data Access Layer\\Data Access Layer.csproj|d:\\store\\study\\.net.project\\complaint-management-system\\data access layer\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4BF054F2-8D1C-485C-809A-A59F332A9F8F}|Data Access Layer\\Data Access Layer.csproj|solutionrelative:data access layer\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{4BF054F2-8D1C-485C-809A-A59F332A9F8F}|Data Access Layer\\Data Access Layer.csproj|d:\\store\\study\\.net.project\\complaint-management-system\\data access layer\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BF054F2-8D1C-485C-809A-A59F332A9F8F}|Data Access Layer\\Data Access Layer.csproj|solutionrelative:data access layer\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4BF054F2-8D1C-485C-809A-A59F332A9F8F}|Data Access Layer\\Data Access Layer.csproj|d:\\store\\study\\.net.project\\complaint-management-system\\data access layer\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4BF054F2-8D1C-485C-809A-A59F332A9F8F}|Data Access Layer\\Data Access Layer.csproj|solutionrelative:data access layer\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BD360A9-C9F0-40B7-8E12-B51272EBF6C1}|Business Layer\\Business Layer.csproj|d:\\store\\study\\.net.project\\complaint-management-system\\business layer\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BD360A9-C9F0-40B7-8E12-B51272EBF6C1}|Business Layer\\Business Layer.csproj|solutionrelative:business layer\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
+=======
+>>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{28B62301-DB10-4765-B8C8-7A61E1E7B7D3}|Application\\Application.csproj|d:\\store\\study\\.net.project\\complaint-management-system\\application\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28B62301-DB10-4765-B8C8-7A61E1E7B7D3}|Application\\Application.csproj|solutionrelative:application\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{7BD360A9-C9F0-40B7-8E12-B51272EBF6C1}|Business Layer\\Business Layer.csproj|d:\\store\\study\\.net.project\\complaint-management-system\\business layer\\jwtoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BD360A9-C9F0-40B7-8E12-B51272EBF6C1}|Business Layer\\Business Layer.csproj|solutionrelative:business layer\\jwtoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -51,12 +59,20 @@
       "RelativeMoniker": "D:0:0:{28B62301-DB10-4765-B8C8-7A61E1E7B7D3}|Application\\Application.csproj|solutionrelative:application\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BD360A9-C9F0-40B7-8E12-B51272EBF6C1}|Business Layer\\Business Layer.csproj|d:\\store\\study\\.net.project\\complaint-management-system\\business layer\\services\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BD360A9-C9F0-40B7-8E12-B51272EBF6C1}|Business Layer\\Business Layer.csproj|solutionrelative:business layer\\services\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7BD360A9-C9F0-40B7-8E12-B51272EBF6C1}|Business Layer\\Business Layer.csproj|d:\\store\\study\\.net.project\\complaint-management-system\\business layer\\iservices\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BD360A9-C9F0-40B7-8E12-B51272EBF6C1}|Business Layer\\Business Layer.csproj|solutionrelative:business layer\\iservices\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{28B62301-DB10-4765-B8C8-7A61E1E7B7D3}|Application\\Application.csproj|d:\\store\\study\\.net.project\\complaint-management-system\\application\\seeds\\defaultdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28B62301-DB10-4765-B8C8-7A61E1E7B7D3}|Application\\Application.csproj|solutionrelative:application\\seeds\\defaultdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28B62301-DB10-4765-B8C8-7A61E1E7B7D3}|Application\\Application.csproj|d:\\store\\study\\.net.project\\complaint-management-system\\application\\controllers\\citizencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28B62301-DB10-4765-B8C8-7A61E1E7B7D3}|Application\\Application.csproj|solutionrelative:application\\controllers\\citizencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28B62301-DB10-4765-B8C8-7A61E1E7B7D3}|Application\\Application.csproj|d:\\store\\study\\.net.project\\complaint-management-system\\application\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28B62301-DB10-4765-B8C8-7A61E1E7B7D3}|Application\\Application.csproj|solutionrelative:application\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -66,7 +82,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+<<<<<<< Updated upstream
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
@@ -83,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "AdminController.cs",
               "DocumentMoniker": "D:\\store\\study\\.net.project\\Complaint-Management-System\\Application\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Application\\Controllers\\AdminController.cs",
@@ -96,7 +113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 1,
               "Title": "AdminService.cs",
               "DocumentMoniker": "D:\\store\\study\\.net.project\\Complaint-Management-System\\Business Layer\\Services\\AdminService.cs",
               "RelativeDocumentMoniker": "Business Layer\\Services\\AdminService.cs",
@@ -105,11 +122,12 @@
               "ViewState": "AgIAAEsAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-08T19:41:20.842Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "D:\\store\\study\\.net.project\\Complaint-Management-System\\Data Access Layer\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Data Access Layer\\AppDbContext.cs",
@@ -122,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\store\\study\\.net.project\\Complaint-Management-System\\Data Access Layer\\User.cs",
               "RelativeDocumentMoniker": "Data Access Layer\\User.cs",
@@ -135,7 +153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Notification.cs",
               "DocumentMoniker": "D:\\store\\study\\.net.project\\Complaint-Management-System\\Data Access Layer\\Notification.cs",
               "RelativeDocumentMoniker": "Data Access Layer\\Notification.cs",
@@ -143,12 +161,11 @@
               "RelativeToolTip": "Data Access Layer\\Notification.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T11:52:33.302Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-09T11:52:33.302Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "AccountService.cs",
               "DocumentMoniker": "D:\\store\\study\\.net.project\\Complaint-Management-System\\Business Layer\\Services\\AccountService.cs",
               "RelativeDocumentMoniker": "Business Layer\\Services\\AccountService.cs",
@@ -161,20 +178,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
+=======
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+>>>>>>> Stashed changes
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\store\\study\\.net.project\\Complaint-Management-System\\Application\\Program.cs",
               "RelativeDocumentMoniker": "Application\\Program.cs",
               "ToolTip": "D:\\store\\study\\.net.project\\Complaint-Management-System\\Application\\Program.cs",
               "RelativeToolTip": "Application\\Program.cs",
+<<<<<<< Updated upstream
               "ViewState": "AgIAAAEAAAAAAAAAAAAmwBcAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T11:49:41.514Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-09T11:49:41.514Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "JwtOptions.cs",
               "DocumentMoniker": "D:\\store\\study\\.net.project\\Complaint-Management-System\\Business Layer\\JwtOptions.cs",
               "RelativeDocumentMoniker": "Business Layer\\JwtOptions.cs",
@@ -182,12 +206,11 @@
               "RelativeToolTip": "Business Layer\\JwtOptions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T11:49:18.27Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-09T11:49:18.27Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "IEmailService.cs",
               "DocumentMoniker": "D:\\store\\study\\.net.project\\Complaint-Management-System\\Business Layer\\IServices\\IEmailService.cs",
               "RelativeDocumentMoniker": "Business Layer\\IServices\\IEmailService.cs",
@@ -195,12 +218,11 @@
               "RelativeToolTip": "Business Layer\\IServices\\IEmailService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T10:00:11.651Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-09T10:00:11.651Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "IComplaintService.cs",
               "DocumentMoniker": "D:\\store\\study\\.net.project\\Complaint-Management-System\\Business Layer\\IServices\\IComplaintService.cs",
               "RelativeDocumentMoniker": "Business Layer\\IServices\\IComplaintService.cs",
@@ -208,12 +230,11 @@
               "RelativeToolTip": "Business Layer\\IServices\\IComplaintService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T10:00:04.414Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-09T10:00:04.414Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\store\\study\\.net.project\\Complaint-Management-System\\Application\\appsettings.json",
               "RelativeDocumentMoniker": "Application\\appsettings.json",
@@ -221,12 +242,11 @@
               "RelativeToolTip": "Application\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-08T19:29:33.787Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-08T19:29:33.787Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "IDepartmentService.cs",
               "DocumentMoniker": "D:\\store\\study\\.net.project\\Complaint-Management-System\\Business Layer\\IServices\\IDepartmentService.cs",
               "RelativeDocumentMoniker": "Business Layer\\IServices\\IDepartmentService.cs",
@@ -234,12 +254,11 @@
               "RelativeToolTip": "Business Layer\\IServices\\IDepartmentService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T10:00:08.765Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-09T10:00:08.765Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Attachment.cs",
               "DocumentMoniker": "D:\\store\\study\\.net.project\\Complaint-Management-System\\Data Access Layer\\Attachment.cs",
               "RelativeDocumentMoniker": "Data Access Layer\\Attachment.cs",
@@ -247,8 +266,49 @@
               "RelativeToolTip": "Data Access Layer\\Attachment.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T20:08:28.05Z",
+              "WhenOpened": "2025-12-08T20:08:28.05Z"
+=======
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T09:15:08.781Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DefaultData.cs",
+              "DocumentMoniker": "D:\\store\\study\\.net.project\\Complaint-Management-System\\Application\\Seeds\\DefaultData.cs",
+              "RelativeDocumentMoniker": "Application\\Seeds\\DefaultData.cs",
+              "ToolTip": "D:\\store\\study\\.net.project\\Complaint-Management-System\\Application\\Seeds\\DefaultData.cs",
+              "RelativeToolTip": "Application\\Seeds\\DefaultData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T09:15:04.34Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CitizenController.cs",
+              "DocumentMoniker": "D:\\store\\study\\.net.project\\Complaint-Management-System\\Application\\Controllers\\CitizenController.cs",
+              "RelativeDocumentMoniker": "Application\\Controllers\\CitizenController.cs",
+              "ToolTip": "D:\\store\\study\\.net.project\\Complaint-Management-System\\Application\\Controllers\\CitizenController.cs",
+              "RelativeToolTip": "Application\\Controllers\\CitizenController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T09:13:58.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\store\\study\\.net.project\\Complaint-Management-System\\Application\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Application\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\store\\study\\.net.project\\Complaint-Management-System\\Application\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Application\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T09:13:19.842Z"
+>>>>>>> Stashed changes
             }
           ]
         },
