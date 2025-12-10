@@ -236,7 +236,7 @@ public class ComplaintService(AppDbContext context, IMapper mapper, IFirebaseSer
 
             await transaction.CommitAsync();
 
-            // await firebaseService.NotifyAdmin("New Complaint",complaintToAdd.Title + " : " + complaintToAdd.Description);
+            // await firebaseService.NotifyAdmin("New  Complaint",complaintToAdd.Title + " : " + complaintToAdd.Description);
 
             response.Result = mapper.Map<GetComplaintDto>(complaint);
 
