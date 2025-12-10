@@ -110,15 +110,5 @@
     "C:\\Users\\BSH\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\9.0.11\\microsoft.netcore.app.runtime.win-x64.9.0.11.nupkg.sha512",
     "C:\\Users\\BSH\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\9.0.11\\microsoft.windowsdesktop.app.runtime.win-x86.9.0.11.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "message": "Problem reading the cache file D:\\store\\study\\.net.project\\Complaint-Management-System\\Business Layer\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0.",
-      "projectPath": "D:\\store\\study\\.net.project\\Complaint-Management-System\\Business Layer\\Business Layer.csproj",
-      "warningLevel": 1,
-      "filePath": "D:\\store\\study\\.net.project\\Complaint-Management-System\\Business Layer\\Business Layer.csproj",
-      "targetGraphs": []
-    }
-  ]
+  "logs": []
 }

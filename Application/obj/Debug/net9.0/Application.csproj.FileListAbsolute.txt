@@ -174,8 +174,8 @@ C:\Users\hp\Documents\Informatics\5\الفصل الأول 2024\Internet Applicat
 C:\Users\hp\Documents\Informatics\5\الفصل الأول 2024\Internet Applications\ComplaintManagementSystem\Application\obj\Debug\net9.0\Application.genruntimeconfig.cache
 C:\Users\hp\Documents\Informatics\5\الفصل الأول 2024\Internet Applications\ComplaintManagementSystem\Application\obj\Debug\net9.0\ref\Application.dll
 D:\store\study\.net.project\Complaint-Management-System\Application\bin\Debug\net9.0\appsettings.Development.json
-D:\store\study\.net.project\Complaint-Management-System\Application\bin\Debug\net9.0\Application.staticwebassets.endpoints.json
 D:\store\study\.net.project\Complaint-Management-System\Application\bin\Debug\net9.0\appsettings.json
+D:\store\study\.net.project\Complaint-Management-System\Application\bin\Debug\net9.0\Application.staticwebassets.endpoints.json
 D:\store\study\.net.project\Complaint-Management-System\Application\bin\Debug\net9.0\Application.exe
 D:\store\study\.net.project\Complaint-Management-System\Application\bin\Debug\net9.0\Application.deps.json
 D:\store\study\.net.project\Complaint-Management-System\Application\bin\Debug\net9.0\Application.runtimeconfig.json
