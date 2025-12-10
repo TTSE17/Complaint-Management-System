@@ -3,7 +3,8 @@ using System.Text.Json;
 
 namespace Business_Layer.Services;
 
-public class ComplaintService(AppDbContext context, IMapper mapper) : IComplaintService
+public class ComplaintService(AppDbContext context, IMapper mapper, IFirebaseService firebaseService)
+    : IComplaintService
 {
     [TracingAspect("View Complaints")]
     public async Task<Response<List<GetComplaintDto>>> GetAll(Expression<Func<Complaint, bool>>? criteria = null)
@@ -37,7 +38,7 @@ public class ComplaintService(AppDbContext context, IMapper mapper) : IComplaint
         response.Result = complaints;
 
         response.Success = true;
-        
+
         return response;
     }
 
@@ -86,7 +87,8 @@ public class ComplaintService(AppDbContext context, IMapper mapper) : IComplaint
 
             await transaction.CommitAsync();
 
-            // await firebaseService.NotifyAdmin("New Complaint",complaintToAdd.Title + " : " + complaintToAdd.Description);
+            await firebaseService.NotifyAdmin("New Complaint",
+                complaintToAdd.Title + " : " + complaintToAdd.Description);
 
             response.Result = mapper.Map<GetComplaintDto>(complaint);
 

@@ -15,12 +15,13 @@ public class FirebaseService : IFirebaseService
     public FirebaseService(AppDbContext context, IWebHostEnvironment env, INotificationService notificationService)
     {
         _context = context;
+
         _notificationService = notificationService;
 
         if (FirebaseApp.DefaultInstance != null) return;
 
         var basePath = env.ContentRootPath;
-        var jsonPath = Path.Combine(basePath, "abd-alhamed-firebase-adminsdk-fbsvc-42f7fc9ab0.json");
+        var jsonPath = Path.Combine(basePath, "complaints-project-firebase.json");
 
         FirebaseApp.Create(new AppOptions
         {
