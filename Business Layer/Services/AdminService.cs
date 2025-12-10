@@ -1,6 +1,13 @@
-﻿namespace Business_Layer.Services;
+﻿
+using Microsoft.EntityFrameworkCore;
 
-public class AdminService(IMapper mapper, TokenService tokenService) : IAdminService
+namespace Business_Layer.Services;
+
+public class AdminService(
+    AppDbContext context,
+    IMapper mapper,
+    TokenService tokenService
+) : IAdminService
 {
     public async Task<Response<AuthResponse>> Login(User user)
     {
@@ -19,6 +26,72 @@ public class AdminService(IMapper mapper, TokenService tokenService) : IAdminSer
             IsEmailConfirmed = true
         };
 
+        response.Success = true;
+
+        return response;
+    }
+
+    public async Task<Response<int>> GetUsersCount()
+    {
+        var response = new Response<int>();
+
+        var count = await context.Users.CountAsync();
+
+        response.Result = count;
+        response.Success = true;
+
+        return response;
+    }
+
+    public async Task<Response<int>> GetComplaintsCount()
+    {
+        var response = new Response<int>();
+
+        var count = await context.Complaints.CountAsync();
+
+        response.Result = count;
+        response.Success = true;
+
+        return response;
+    }
+
+    public async Task<Response<int>> GetComplaintsRejectedCount()
+    {
+        var response = new Response<int>();
+
+        var count = await context.Complaints
+            .Where(c => c.Status == ComplaintStatus.Rejected)
+            .CountAsync();
+
+        response.Result = count;
+        response.Success = true;
+
+        return response;
+    }
+
+    public async Task<Response<int>> GetComplaintsResolvedCount()
+    {
+        var response = new Response<int>();
+
+        var count = await context.Complaints
+            .Where(c => c.Status == ComplaintStatus.Resolved)
+            .CountAsync();
+
+        response.Result = count;
+        response.Success = true;
+
+        return response;
+    }
+
+    public async Task<Response<int>> GetComplaintsPendingCount()
+    {
+        var response = new Response<int>();
+
+        var count = await context.Complaints
+            .Where(c => c.Status == ComplaintStatus.Pending)
+            .CountAsync();
+
+        response.Result = count;
         response.Success = true;
 
         return response;
