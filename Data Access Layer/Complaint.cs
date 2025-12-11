@@ -25,6 +25,9 @@ public class Complaint
     public string HistoryJson { get; set; } = ""; // array of previous versions    
 
     public List<Attachment> Attachments { get; set; } = [];
+
+    public DateTime UpdatedAt { get; set; } = DateTime.Now;
+
 }
 
 public enum ComplaintStatus
