@@ -1,4 +1,6 @@
-﻿namespace Application.DependencyInjections
+﻿using Business_Layer.Helpers;
+
+namespace Application.DependencyInjections
 {
     public static class RepositoryDependencyInjection
     {
@@ -29,6 +31,9 @@
             services.AddScoped<INotificationService, NotificationService>();
 
             services.AddScoped<ITraceLogService, TraceLogService>();
+
+            services.AddScoped<LoggerHelper>();
+
 
             return services;
         }

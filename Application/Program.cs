@@ -1,4 +1,5 @@
 using AspectCore.Extensions.DependencyInjection;
+using Business_Layer.Helpers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +24,9 @@ builder.Services
     ;
 
 var app = builder.Build();
+
+//builder.Services.AddScoped<ITraceLogService, TraceLogService>();
+//builder.Services.AddScoped<LoggerHelper>();
 
 // app.UseExceptionHandler();
 // app.UseHsts();

@@ -3,4 +3,7 @@
 public interface IDepartmentService
 {
     Task<Response<List<GetDepartmentDto>>> GetAll();
+
+    Task<Response<GetDepartmentDto>> GetById(int id);
+
 }

@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 
 namespace Application.Controllers;
-[Authorize]
+//[Authorize]
 [Route("api/[controller]")]
 [ApiController]
 public class AdminController(IAdminService adminService) : ControllerBase
@@ -46,6 +46,19 @@ public class AdminController(IAdminService adminService) : ControllerBase
     public async Task<IActionResult> GetWeeklyCompleted()
     {
         var result = await adminService.GetWeeklyCompletedStats();
+        return Ok(result);
+    }
+
+    [HttpPost("create-employee")]
+    public async Task<IActionResult> CreateEmployee(CreateEmployeeDto dto)
+    {
+        var result = await adminService.CreateEmployee(dto);
+        return Ok(result);
+    }
+    [HttpGet("users")]
+    public async Task<IActionResult> GetAllUsers()
+    {
+        var result = await adminService.GetAllUsers();
         return Ok(result);
     }
 

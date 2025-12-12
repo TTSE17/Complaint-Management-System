@@ -1,4 +1,6 @@
-﻿namespace Business_Layer.IServices;
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace Business_Layer.IServices;
 
 public interface ITraceLogService
 {

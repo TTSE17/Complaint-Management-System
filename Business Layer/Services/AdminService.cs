@@ -1,4 +1,5 @@
 ﻿
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace Business_Layer.Services;
@@ -6,8 +7,9 @@ namespace Business_Layer.Services;
 public class AdminService(
     AppDbContext context,
     IMapper mapper,
-    TokenService tokenService
-) : IAdminService
+    TokenService tokenService,
+    UserManager<User> userManager
+    ) : IAdminService
 {
     //public async Task<Response<AuthResponse>> Login(User user)
     //{
@@ -152,6 +154,80 @@ public class AdminService(
 
         return response;
     }
+    public async Task<Response<EmployeeCreatedResponse>> CreateEmployee(CreateEmployeeDto dto)
+    {
+        var response = new Response<EmployeeCreatedResponse>();
+
+        // إنشاء كلمة سر عشوائية
+        var password = Guid.NewGuid().ToString("N")[..8];
+
+        var user = new User
+        {
+            FirstName = dto.FirstName,
+            LastName = dto.LastName,
+            Email = dto.Email,
+            UserName = dto.Email,
+            PhoneNumber = dto.PhoneNumber,
+            UserType = UserType.Employee,
+            EmailConfirmed = true
+        };
+
+        var result = await userManager.CreateAsync(user, password);
+
+        if (!result.Succeeded)
+        {
+            response.Error = string.Join(" | ", result.Errors.Select(e => e.Description));
+            return response;
+        }
+
+        // إضافة Role
+        await userManager.AddToRoleAsync(user, "Employee");
+
+        var employee = new Employee
+        {
+            UserId = user.Id,
+            DepartmentId = dto.DepartmentId,
+        };
+
+        context.Employees.Add(employee);
+        await context.SaveChangesAsync();
+
+        
+
+
+        response.Result = new EmployeeCreatedResponse
+        {
+            UserId = user.Id,
+            FullName = $"{user.FirstName} {user.LastName}",
+            Email = user.Email,
+            Password = password
+        };
+
+        response.Success = true;
+        return response;
+    }
+
+    public async Task<Response<List<AdminGetUserDto>>> GetAllUsers()
+    {
+        var response = new Response<List<AdminGetUserDto>>();
+
+        var users = await context.Users.ToListAsync();
+
+        response.Result = users.Select(u => new AdminGetUserDto
+        {
+            Id = u.Id,
+            FullName = $"{u.FirstName} {u.LastName}",
+            Email = u.Email!,
+            PhoneNumber = u.PhoneNumber!,
+            UserType = u.UserType.ToString()
+        }).ToList();
+
+        response.Success = true;
+
+        return response;
+    }
+
+
 
 
 }

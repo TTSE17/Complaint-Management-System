@@ -15,6 +15,11 @@ namespace Business_Layer.Services
 
         Task<Response<int>> GetComplaintsPendingCount();
         Task<Response<List<WeeklyDataDto>>> GetWeeklyCompletedStats();
+        Task<Response<EmployeeCreatedResponse>> CreateEmployee(CreateEmployeeDto dto);
+
+        Task<Response<List<AdminGetUserDto>>> GetAllUsers();
+
+
 
     }
 }

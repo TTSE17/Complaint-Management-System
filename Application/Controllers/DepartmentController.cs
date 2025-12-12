@@ -12,4 +12,12 @@ public class DepartmentController(IDepartmentService departmentService) : Contro
 
         return Ok(response);
     }
+    [HttpGet("{id:int}")]
+    public async Task<IActionResult> GetById(int id)
+    {
+        var response = await departmentService.GetById(id);
+
+        return Ok(response);
+    }
+
 }
