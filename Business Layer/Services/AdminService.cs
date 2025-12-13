@@ -226,8 +226,27 @@ public class AdminService(
 
         return response;
     }
+    public async Task<Response<AdminDashboardDto>> GetAdminCounts()
+    {
+        var response = new Response<AdminDashboardDto>();
 
+        var result = new AdminDashboardDto
+        {
+            UsersCount = await context.Users.CountAsync(),
+            ComplaintsCount = await context.Complaints.CountAsync(),
+            ComplaintsRejected = await context.Complaints
+                .CountAsync(c => c.Status == ComplaintStatus.Rejected),
+            ComplaintsResolved = await context.Complaints
+                .CountAsync(c => c.Status == ComplaintStatus.Resolved),
+            ComplaintsPending = await context.Complaints
+                .CountAsync(c => c.Status == ComplaintStatus.Pending)
+        };
 
+        response.Result = result;
+        response.Success = true;
 
+        return response;
+    }
 
+    
 }
