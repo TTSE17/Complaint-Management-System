@@ -230,9 +230,9 @@ public class AdminService(
     {
         var response = new Response<AdminDashboardDto>();
 
-        var result = new AdminDashboardDto
+        var result = new AdminDashboardDto 
         {
-            UsersCount = await context.Users.CountAsync(),
+            UsersCount = await context.Users.Where(c => c.UserType == UserType.Citizen).CountAsync(),
             ComplaintsCount = await context.Complaints.CountAsync(),
             ComplaintsRejected = await context.Complaints
                 .CountAsync(c => c.Status == ComplaintStatus.Rejected),
