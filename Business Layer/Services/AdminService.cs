@@ -58,7 +58,7 @@ public class AdminService(
     {
         var response = new Response<int>();
 
-        var count = await context.Users.CountAsync();
+        var count = await context.Users.Where(c => c.UserType==UserType.Citizen).CountAsync();
 
         response.Result = count;
         response.Success = true;

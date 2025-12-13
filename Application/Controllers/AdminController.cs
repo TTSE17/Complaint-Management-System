@@ -7,6 +7,8 @@ namespace Application.Controllers;
 [ApiController]
 public class AdminController(IAdminService adminService) : ControllerBase
 {
+  
+
     [HttpGet("users-count")]
     public async Task<IActionResult> GetUsersCount()
     {
@@ -61,6 +63,14 @@ public class AdminController(IAdminService adminService) : ControllerBase
         var result = await adminService.GetAllUsers();
         return Ok(result);
     }
+
+    [HttpGet("counts")]
+    public async Task<IActionResult> GetAdminCounts()
+    {
+        var result = await adminService.GetAdminCounts();
+        return Ok(result);
+    }
+
 
 
 }
